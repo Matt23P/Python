@@ -1,8 +1,3 @@
-import numpy
-
-from functions import *
-
-
 def bisection(f, p, k, cond, limiter):
     if (f(p) * f(k)) > 0:
         return 'err', 'err'

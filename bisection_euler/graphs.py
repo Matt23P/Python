@@ -2,7 +2,6 @@ from matplotlib import pyplot as plt
 
 
 def graph(func, p, k, wynik, met):
-
     plt_precision = 0.0001
     pocz = p
     fx = [0.0] * int((abs(p) + k) / plt_precision)
@@ -50,7 +49,7 @@ def graph(func, p, k, wynik, met):
 
     ax.annotate('y', xy=(0, 1), xycoords=('data', 'axes fraction'),
                 xytext=(0, 7), textcoords='offset points',
-                ha='center', va='bottom',)
+                ha='center', va='bottom', )
 
     ax.text(x=wynik + 0.3, y=0.3, s=f"x0 = {round(wynik, 3)}...", fontsize=6)
 
